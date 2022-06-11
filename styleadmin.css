@@ -1,0 +1,183 @@
+.clear{
+    clear: both;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+.slide{
+    width: 100%;
+    height: 50px;
+    background-color: #c00;
+    
+}
+.slide .box-login{
+    float:right;
+    padding: 15.5px 10px;
+    color: white;
+    
+}
+
+article .button  {
+   
+    width: 15%;
+    height: 500px;
+    float: left;
+ }
+article .button  button{
+    display: block;
+    
+}
+
+article .button {
+    margin-left: -15%;
+   
+}
+article .button button{
+    width: 93%;
+    height: 70px;
+    border:none;
+    cursor: pointer;
+    font-size: 14px;
+}
+article .content .title {
+    font-weight: bold;
+    color: #c00;
+    
+}
+article .content .title i {
+    
+    margin-top: 13px;
+}
+article .row{
+    display: flex;
+    box-sizing: border-box;
+}
+article .row .padding-box{
+   
+    margin-top: -400px;
+    margin-left:30px;
+    
+}
+article .row .padding-box .box{
+    width: 380px;
+    height: 100px;
+    
+    
+}
+
+article .roww{
+    display: flex;
+    box-sizing: border-box;
+}
+article .roww .padding-box{
+   
+    margin-top: -200px;
+    margin-left:30px;
+    
+}
+article .roww .padding-box .box2{
+    width: 380px;
+    height: 310px;
+    
+    
+}
+article .roww .box2 .box2-bot .box2-bot-right {
+    float: left;
+    width: 50%;
+    margin-bottom: 10px;
+    text-align: right;
+    text-decoration: underline;
+}
+
+article .roww .box2 .box2-bot .box2-bot-left {
+    float: left;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+article .content .row .padding-boc{
+    margin-top: 20px;
+}
+article .content .row .padding-boc input{
+   /* width: 300%; */
+   width: 450px;
+   height: 40px;
+}
+article .content{
+    float: left;
+    width:40%;
+}
+article .content .btn-form{
+    width: 30%;
+    height: 35px;
+    border: none;
+    color: #fff;
+    margin-top: 10px;
+    border-radius:5px ;
+}
+article .content-p{
+    padding-top: 10px;
+    
+}
+article .content-p .row1 .padding-box input{
+    
+    width:630px;
+   height: 40px;
+}
+article .content-p .row1  {
+    
+   display: flex;
+}
+article .content-p .row1 .padding-box button{
+    
+    width:100px;
+   height: 44px;
+}
+table, th, td {  
+    width:700px ;
+    border: 1.5px solid black;  
+    border-collapse: collapse; 
+     
+}  
+article .content-p .title button{
+    margin-left: 350px;
+    width: 100px;
+    height: 44px;
+}
+article .content-p .title {
+    margin-bottom: 20px;
+}
+article .content-p .row1 {
+    margin-bottom: 20px;
+} 
+article .content-p .title  {
+   color: #c00;
+   font-weight: bold;
+}
+/* article .content-p .padding-bos table th td{
+    padding: 5px 10px;
+
+} */
+article .content .row form .padding-boa select{
+margin-top:10px ;
+height: 40px;
+}
+article .content .row form .padding-boc label
+{
+    width: 500px;
+}
+article .content-p .title button
+{
+    background-color: #c00;
+    color: #fff;
+    border: none;
+}
+article .content-p .row1 button
+{
+    background-color: #c00;
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+}

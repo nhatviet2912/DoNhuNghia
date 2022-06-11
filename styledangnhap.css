@@ -1,0 +1,98 @@
+body{ 
+    /* background: url(./img/slide.jpg); */
+    background-color:darkgrey;
+}
+.thanhlogin{
+    width: 400px;
+    height: 450px;
+    border: 1px solid black;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 3px 10px 0 rgb(0 0 0 / 14%);
+    border-radius: .25rem;
+   margin-top: 100px;   
+   margin-left: 400px;  
+}
+.login-html{
+    margin-top: 40px;
+}
+.group {
+    padding-top: 30px;
+}
+#sign-up-htm{
+    display: none;
+} 
+   /* input{
+        width: 300px;
+         height: 30px;
+    }  */
+.label{
+    padding-left: 6px;
+   
+}
+article .thanhlogin .login-html .tablinks{
+    margin-left: 50px;
+    width: 120px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+article .thanhlogin .login-html .tablinks:hover{
+   background-color: #ee4d2d;
+    color: #fff;
+
+}
+article .thanhlogin .login-html .tablinks.active{
+    background-color: #ee4d2d;
+     color: #fff;
+ 
+ }
+#pass{
+ margin-left: 4px;
+}
+.button{
+    color: #fff;
+    background-color: #ee4d2d;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 9%);
+    width: 120px;
+    height: 40px;
+    margin-left: 140px;
+}
+.button:hover{
+    background-color: #c00;
+}
+.foot-lnk a{
+   text-decoration: none;
+   color: black;
+   
+}
+.foot-lnk{
+    margin-top: 10px;
+    
+    margin-left: 210px;
+}
+.foot-lnk a:hover{
+    color: #c00;
+}
+article .thanhlogin .login-html #tab-1{
+    margin-left: 95px;
+}
+
+article .thanhlogin .login-html #sign-up-htm .group .mot{
+    margin-left: 7px;
+    }
+    article .thanhlogin .login-html #sign-up-htm .group .hai{
+        margin-left: 32px;
+        }
+.group .input{
+    
+    width: 250px;
+    height: 25px;
+}
+.group .icon {
+    margin-left: 20%;
+}
+.check {
+    margin-left: 120px;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleadmin.css">
+</head>
+<body>
+    <div class="slide">
+        <div class="box-login" id="box-t">
+            Xin chào, <i class="fas fa-sort-down" ></i>
+            <!-- <div class="box-login-bottom" id="box-b">
+                <button><i class="fas fa-user-alt" ></i> Tài khoản</button>
+                <button><i class="fas fa-sign-out-alt" ></i> Đăng xuất</button>
+            </div> -->
+        </div>
+       </div>
+       <article>
+        <div class="clear"></div>
+        <div class="button">
+            
+            
+               
+                <button class="active" onclick="TongQuan()"><i class="fas fa-tachometer-alt"></i> Tổng quan</button>
+                
+                <button onclick="LoaiSanPham()"><i class="fas fa-boxes"></i> Loại sản phẩm</button>
+                <button onclick="SanPham()"><i class="fas fa-barcode"></i> Sản phẩm</button>
+                <button onclick="NhaCungCap()"><i class="fas fa-truck"></i> Nhà cung cấp</button>
+                <button onclick="KhachHang()"><i class="fas fa-users"></i> Khách hàng</button>
+                <button onclick="NhanVien()"><i class="fas fa-user"></i> Nhân viên</button>
+                <button onclick="HoaDonNhap()"><i class="fas fa-file-import"></i> Hóa đơn nhập</button>
+                <button onclick="HoaDonBan()"><i class="fas fa-shopping-cart"></i> Hóa đơn bán</button>
+                <button onclick="TinTuc()"><i class="fas fa-newspaper"></i> Tin tức</button>
+                <button onclick="ThietLap()"><i class="fas fa-cogs"></i> Thiết lập</button>
+                
+                
+           
+        </div>
+        <div class="col-6 col-s-12 content">
+            <div class="tabcontent">
+                <div class="title">
+                    <i class="fas fa-shopping-cart" aria-hidden="true"></i> Nhập thông tin hóa đơn bán
+                    <hr>
+                </div>
+                <div class="row">
+                    <form>
+                        <div class="col-12 col-s-12 padding-boc">
+                            <label for="txtright">Mã hóa đơn bán:</label>
+                        </div>
+                        <div class="col-12 col-s-12 padding-boc">
+                            <input type="text" id="mahd" placeholder="Nhập mã hóa đơn...Tự động sinh nếu không nhập...">
+                        </div>
+                        <div class="col-12 col-s-12 padding-boc">
+                            <label for="txtright">Khách hàng:</label>
+                        </div>
+                        <div class="col-12 col-s-12 padding-boc">
+                            <input type="text" id="khachhang" list="listKhachHang">
+                            <datalist id="listKhachHang" 
+                                <option value="Nguyễn Văn Anh" >
+                                </option><option value="Nguyễn Thu Thủy">
+                                </option><option value="Phạm Ngọc Mai">
+                                </option><option value="Chu Minh Tuyết">
+                            </option></datalist>
+                            
+                        </div>
+                        <div class="col-12 col-s-12 padding-boc">
+                            <label for="txtright">Số điện thoại:</label>
+                        </div>
+                        <div class="col-12 col-s-12 padding-boc">
+                            <input type="text" id="sdtkh" placeholder="Nhập số điện thoại...">
+                        </div>
+                        <div class="col-12 col-s-12 padding-boc">
+                            <label for="txtright">Email:</label>
+                        </div>
+                        <div class="col-12 col-s-12 padding-boc">
+                            <input type="email" id="emailkh" placeholder="Nhập email...">
+                        </div>
+                        <div class="col-12 col-s-12 padding-boc">
+                            <label for="txtright">Địa chỉ:</label>
+                        </div>
+                        <div class="col-12 col-s-12 padding-boc">
+                            <input type="tel" id="diachikh" placeholder="Nhập địa chỉ...">
+                        </div>
+                        <div class="col-12 col-s-12 padding-boc">
+                            <label for="txtright">Tổng sản phẩm:</label>
+                        </div>
+                        <div class="col-12 col-s-12 padding-boc">
+                            <input type="number" id="tongsanpham" value="0" readonly="">
+                        </div>
+                        <div class="col-12 col-s-12 padding-boc">
+                            <label for="txtright">Tổng tiền:</label>
+                        </div>
+                        <div class="col-12 col-s-12 padding-boc">
+                            <input type="number" id="tongtien" value="0" readonly="">
+                        </div>
+                        <div class="col-12 col-s-12 padding-boc">
+                            <label for="txtright">Ghi chú:</label>
+                        </div>
+                        <div class="col-12 col-s-12 padding-boc">
+                            <textarea id="ghichu" cols="197" rows="4" placeholder="Nhập ghi chú (không bắt buộc)..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                <hr>
+                <div class="row1">
+                    <table class="table_chitiet">
+                        <tbody id="DSSanPham">
+                            <tr>
+                                <th>Mã HDB</th>
+                                <th>Khách hàng</th>
+                                <th>SĐT</th>
+                                <th>Email</th>
+                                <th>Địa chỉ</th>
+                                <th>Tổng sản phẩm</th>
+                                <th>Tổng tiền</th>
+                                <th>Ngày tạo</th>
+                                <th>Thao tác</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="btn-form" id="AddSanPham" style="background-color: rgba(44, 140, 15, 0.8);">Thêm sản phẩm</button>
+                </div>
+                <hr>
+                <button class="btn-form" style="background-color: rgba(44, 140, 15, 0.8);" onclick="ThemHoaDon()">Thêm hóa đơn bán</button>
+                <button class="btn-form" style="background-color: rgba(227, 32, 21, 0.8);" onclick="NhapMoi()">Nhập mới</button>
+            </div>
+        </div>
+          <div class="content-p">
+            <div class="title">
+                <i class="fas fas fa-boxes" aria-hidden="true"></i> Danh sách hóa đơn bán
+                <button onclick="XoaChon()" style="margin-right: 3px;"><i class="far fa-trash-alt" aria-hidden="true"></i> Xóa
+                    chọn</button>
+                    <hr style="width:30%">
+            </div>
+            <div class="row1">
+                <div class="padding-box">
+                    <input type="text" id="search-product-type" placeholder="Nhập mã, tên loại sản phẩm...">
+                </div>
+                <div class="padding-box">
+                    <button><i class="fas fas fa-search" aria-hidden="true"></i> Tìm kiếm</button>
+                </div>
+            </div>
+            <div class="padding-bos">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="padding-top: 10px;"><input type="checkbox" onclick="CheckAll(this)"></th>
+                            <th>Mã HDB</th>
+                            <th>Khách hàng</th>
+                            <th>SĐT</th>
+                            <th>Email</th>
+                            <th>Địa chỉ</th>
+                            <th>Tổng sản phẩm</th>
+                            <th>Tổng tiền</th>
+                            <th>Ngày tạo</th>
+                            <th>Thao tác</th>
+                           
+                            
+                        </tr>
+                    </thead>
+                    <tbody id="listTypeProduct"></tbody>
+                    <!-- <tbody>
+                        <tr>
+                            <td style="text-align: center;padding-top: 10px;"><input type="checkbox"
+                                    value="" id=""></td>
+                            <td>555551</td>
+                            <td>PC Đồ Họa - WORKSTATION</td>
+                            <td style="text-align: center;">
+                                <i class="fas fa-edit" title="Sửa" onclick="SuaLoaiSanPham()"></i>
+                                <i class="fas fa-trash-alt" title="Xóa"></i>
+                            </td>
+                        </tr>
+                    </tbody> -->
+                    
+                </table>
+            </div>
+          </div>
+        
+        </article>
+</body>

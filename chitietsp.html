@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiet San Pham</title>
+    <link rel="stylesheet" href="stylectsp.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.min.css">
+</head>
+<!-- <script>
+    var arr_hinh = [
+    "/Đồ án 2/img/xedo.png",
+    "/Đồ án 2/img/xeden.png",
+    "/Đồ án 2/img/xexam.png",
+    "/Đồ án 2/img/xexanh.png",
+    
+    
+]
+var index = 0;
+function next() {
+    
+    index++;
+    if (index >= arr_hinh.length) index = 0;
+    var hinh = document.getElementById("hinh");
+    hinh.src = arr_hinh[index];
+    document.getElementById("dem").innerHTML = index + "/" + 3;
+}
+
+function prev() {
+    index--;
+    if (index < 0) index = arr_hinh.length - 1;
+    var hinh = document.getElementById("hinh");
+
+    document.getElementById("hinh").src = arr_hinh[index];
+    document.getElementById("dem").innerHTML = index + "/" + 3;
+}
+</script> -->
+
+<body>
+    <header>
+        <div class="header1">
+            <div class="img">
+                <img src="https://www.honda.com.vn/images/logo.svg" alt="">
+            </div>
+            <ul>
+
+
+
+                <li>
+                    <a href="#">Thăm dò ý kiến Khách hàng</a>
+                    <ul>
+                        <li><a href="">Ô tô</a></li>
+                        <li><a href="">Xe máy</a></li>
+                    </ul>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="#">Câu hỏi thường gặp</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="#">Liên hệ</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="">Tuyển dụng</a>
+                   
+                </li>
+                <li>|</li>
+                <li><a href="#">Mời thầu</a></li>
+                <li>
+                    <div class="social-pc">
+                        <div class="b-social" id="btn-social-pc">
+                            <div class="btn-social">
+                                <img src="https://www.honda.com.vn/images/social/ico-facebook-red.png">
+                                <img src="https://www.honda.com.vn/images/social/ico-ig-red.png">
+                                <img src="https://www.honda.com.vn/images/social/ico-youtube-red.png">
+                            </div>
+
+
+                        </div>
+                    </div>
+        </div>
+        </li>
+        </ul>
+        </div>
+        <div class="header2">
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Giới thiệu<span></span></a>
+                        <ul class="muc mot">
+
+                            <li><a href="#">Giới thiệu Honda Việt Nam</a></li>
+                            <hr style="color:#fff;height:0,5px;">
+                            <li><a href="#">Lịch sử phát triển</a></li>
+                            <hr style="color:#fff;height:0,5px;">
+                            <li><a href="#">Tầm nhìn 2030</a></li>
+                            <hr style="color:#fff;height:0,5px;">
+
+
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Xe máy<span></span></a>
+                        <ul class="muc">
+                            <li><a href="/Đồ án 2/index.html">Sản phẩm </a></li>
+                            <hr style="color:#fff;height:0,5px;">
+                            <li><a href="#">Phụ tùng</a></li>
+                            <hr style="color:#fff;height:0,5px;">
+                            <li><a href="#">Phụ kiện</a></li>
+                            <hr style="color:#fff;height:0,5px;">
+                            <li><a href="#">Dịch vụ sau bán hàng</a></li>
+                            <hr style="color:#fff;height:0,5px;">
+                            <li><a href="#">Cửa hàng Honda ủy nhiệm</a></li>
+                            <hr style="color:#fff;height:0,5px;">
+
+                        </ul>
+                    </li>
+
+                    <li><a href="#">My Honda+<span></span></a>
+                        <ul class="muc hai">
+                            <li><a href="#">Giới thiệu chung</a></li>
+                            <hr style="color:#fff;height:0,5px;">
+                            <li><a href="#">Hướng dẫn sử dụng</a></li>
+                            <hr style="color:#fff;height:0,5px;">
+                            <li><a href="#">Điều khoản sử dụng</a></li>
+                            <hr style="color:#fff;height:0,5px;">
+                        </ul>
+
+                    </li>
+                    <li><a href="#">Đóng góp xã hội</a></li>
+                    <li><a href="#">Lái xe an toàn<span></span></a>
+                        <ul class="muc ba">
+                            <li><a href="#">Chương trình Tôi yêu Việt Nam</a></li>
+                            <hr style="color:#fff;height:0,5px;">
+                            <li><a href="#">Trung tâm đào tạo lái xe an toàn</a></li>
+                            <hr style="color:#fff;height:0,5px;">
+                            <li><a href="#">Hoạt động đào tạo</a></li>
+                            <hr style="color:#fff;height:0,5px;">
+                        </ul>
+                    </li>
+                    <li><a href="#">Tin tức<span></span></a>
+                        <ul class="muc bon">
+                            <li><a href="#">Tin tức chung</a></li>
+                            <hr style="color:#fff;height:0,5px;">
+                            <li><a href="#">Tin tức xe máy</a></li>
+                            <hr style="color:#fff;height:0,5px;">
+                            <li><a href="#">Doanh số bán hàng</a></li>
+                            <hr style="color:#fff;height:0,5px;">
+                            <li><a href="#">Khuyến mại</a></li>
+                            <hr style="color:#fff;height:0,5px;">
+                        </ul>
+                    </li>
+                    <div class="cart"><a href="/Đồ án 2/giohang.html" class="fa-solid fa-cart-shopping"></a></div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <div class="slide">
+        <img src="https://cdn.honda.com.vn/motorbikes/August2021/0iWnMT7utbGIadCX6CS0.jpg" alt="">
+        <hr style="height: 2px;background-color: #c00;">
+    </div>
+
+    <nav>
+        <div class="breadscrumb">
+            <a class="parent" href="#">Trang chủ</a>
+            <span class="img">❯</span>
+            <a class="parent" href="#">Xe máy</a>
+            <span class="img">❯</span>
+            <a class="parent" href="#">Danh sách sản phẩm</a>
+            <span class="img">❯</span>
+            <a class="current">Chi tiết sản phẩm</a>
+        </div>
+        <hr style="height: 0,5px;background-color: #d2d2d2;margin-top:3px;">
+
+    </nav>
+    <article>
+        <div class="anhsanpham">
+            <img id="hinh" src="https://cdn.honda.com.vn/motorbikes/November2020/WvWf9Ur0YzePFWfz4X6u.png" ;alt="">
+        </div>
+        <div class="noidungsp">
+            <h4>Blade 110</h4>
+            <h3>Giá từ: 18.841.091 VNĐ</h3>
+            <div class="chitiet">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'Thietke')"> THIẾT KẾ</button>
+                    <button class="tablinks" onclick="openCity(event, 'Dongco')">ĐỘNG CƠ - CÔNG NGHỆ</button>
+                    <button class="tablinks" onclick="openCity(event, 'Tienich')">TIỆN ÍCH - AN TOÀN</button>
+                </div>
+
+                <div id="Thietke" class="tabcontent">
+                    <div class="ong-xa" onclick="changecontent(this)">
+                        <img src="/Đồ án 2/img/thietke1.png" onclick="changeImage('mot')" id="mot" width="130px">
+                        <p>Ống xả thể thao</p>
+                    </div>
+                    <div class="tem-xe" onclick="changecontent(this)">
+                        <img src="/Đồ án 2/img/thietke2.png" onclick="changeImage('hai')" id="hai" width="130px">
+                        <p>Tem xe tinh tế</p>
+                    </div>
+                    <div class="mat-dong-ho" onclick="changecontent()">
+                        <img src="/Đồ án 2/img/thietke3.png" onclick="changeImage('ba')" id="ba" width="130px">
+                        <p>Mặt đồng hồ hiện đại</p>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+                <div id="Dongco" class="tabcontent">
+                    <div>
+                        <img src="/Đồ án 2/img/dongco1.png" onclick="changeImage('bon')" id="bon" width="130px">
+                        <p>Cảm giác lái xe nhẹ nhàng</p>
+                    </div>
+                    <div> <img src="/Đồ án 2/img/dongco2.png" onclick="changeImage('nam')" id="nam" width="130px">
+                        <p>Sang số êm ái, dễ dàng</p>
+                    </div>
+
+                </div>
+
+                <div id="Tienich" class="tabcontent">
+                    <div>
+                        <img src="/Đồ án 2/img/tienich1.png" onclick="changeImage('sau')" id="sau" width="130px">
+                        <p>Ổ khóa đa năng 3 trong 1</p>
+                    </div>
+                    <div> <img src="/Đồ án 2/img/tienich2.png" onclick="changeImage('bay')" id="bay" width="130px">
+                        <p>Đèn chiếu sáng phía trước luôn sáng</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="ndsp">
+
+            <h3>Thiết kế</h3>
+            <p>Với tem xe mới, Blade mang một diện mạo đầy mạnh mẽ, khỏe khoắn, tạo nên phong cách thể <br> thao và năng
+                động cho người lái.</p>
+            <h3>Động cơ - Công nghệ</h3>
+            <p>Với sự kế thừa các tính năng ưu việt của động cơ Honda 110cc danh tiếng như độ bền cao, vận <br> hành ổn
+                định,
+                Honda Blade 110 giúp động cơ tiết kiệm nhiên liệu vượt trội và bảo vệ môi trường, đáp ứng tiêu chuẩn khí
+                thải Euro 3 nghiêm ngặt.</p>
+            <!-- <h3>Tiện ích & An toàn</h3>
+            <p>Tối ưu hóa tiện ích luôn là một trong những quan tâm hàng đầu của Honda khi phát triển xe, để <br> bạn thoải
+                mái lướt cùng Blade 110 trên mọi cung đường.</p> -->
+        </div>
+
+        <!-- <div class="ndsp2">
+            wgdyuqwdkwdjhkjhkjhdkjwhdjkqkw
+        </div> -->
+
+
+        <div class="clear"></div>
+        <div style="margin-bottom: -120px;margin-left: 170px;
+        margin-right: 170px;">
+            <h3>Bảng giá và màu sắc</h3>
+            <hr style="height: 0,7px;width: 100%;background-color: #c00;">
+        </div>
+        <div class="ndall">
+            <div class="nd duoi">
+                <!-- <h3>Bảng giá và màu sắc</h3>
+                <hr style="height: 0,7px;width: 100%;background-color: #c00;"> -->
+
+                <img id="hinh1" src="/Đồ án 2/img/xedo.png">
+                <ul class="hieuung">
+                    <li><img src="/Đồ án 2/img/xedo.png" onclick="changeImage1('one')" id="one"></li>
+                    <li><img src="/Đồ án 2/img/xeden.png" onclick="changeImage1('two')" id="two"></li>
+                    <li><img src="/Đồ án 2/img/xexam.png" onclick="changeImage1('three')" id="three"></li>
+                    <li><img src="/Đồ án 2/img/xexanh.png" onclick="changeImage1('four')" id="four"></li>
+                </ul>
+               
+                <!-- <div class="dieuhuong">
+                    <i class="dieu trai" onclick="prev()">
+                        < </i>
+                            <i class="dieu phai" onclick="next()"> > </i>
+                </div> -->
+
+                <!-- <p id="dem"> 0/3 </p> -->
+            </div>
+            <div class="column pd-detail-aside">
+
+                <h1 class="pd-detail-title">Honda Blade 110 – Phiên Bản Thể Thao</h1>
+                <div class="pd-detail-info">
+                    <div class="columns">
+                        <div class="column pd-detail-info-left">
+                            <p class="pd-detail-info-price">Giá bán: <span class="red-color">Chỉ từ:18.841.091
+                                    VNĐ</span>
+                            </p>
+                            <div class="pd-detail-info-contact">
+                                <div class="icon">
+                                    <img src="https://hoabinhminhxemay.com/template/images/header-hotline.svg" alt="">
+                                </div>
+                                <div class="hotline">
+                                    <p><a href="tel:1800 1257">1800 1257</a></p>
+                                    <p><a href="tel:1800 555 525">1800 555 525</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column pd-detail-info-right">
+                            <ul class="pd-detail-info-nav">
+                                <li><a href="#">Tham khảo trả góp</a></li>
+                                <li><a href="#">Mua hàng qua Tiki</a>
+                                </li>
+                                <li><a href="#">Mua hàng qua Sendo</a>
+                                </li>
+                                <li><a href="#" onclick="addToCart({id:'01',image:'/Đồ án 2/img/xe1.png', price:18841091, name:'Blade 110'})"><i class="fas fa-cart-plus" aria-hidden="true"></i>Thêm vào giỏ hàng</a> 
+                                </li>
+                              
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="pd-detail-note mb-10">
+                    <img src="https://hoabinhminhxemay.com/template/images/tag.png" alt="">
+                    <p>Giá xe sẽ khác nhau theo phiên bản, màu sắc</p>
+                </div>
+                <div class="pd-detail-note red-bg mb-10">
+                    <img src="https://hoabinhminhxemay.com/template/images/gift-white.png" alt="">
+                    <p>Khuyến mãi đang được áp dụng tại Hệ thống Xe máy HONDA <a href="#"> </a></p>
+                </div>
+
+                <!-- <div class="pd-detail-gift">
+                    <div class="pd-detail-gift-giohang">
+                        <img src="https://hoabinhminhxemay.com/template/images/gift-white.png" alt="">
+                        <button> Thêm Vào Giỏ Hàng </button>
+                    </div> -->
+
+            </div>
+        </div>
+
+        </div>
+        <div class="ndduoi">
+            <div class="tab-hai">
+                <button class="tablinks " onclick="openCity(event, 'Lichsu')">LỊCH SỬ ĐỜI XE</button>
+                <button class="tablinks active" onclick="openCity(event, 'Thongso')">THÔNG SỐ KỸ THUẬT</button>
+                <button class="tablinks" onclick="openCity(event, 'Anh')">THƯ VIỆN ẢNH</button>
+            </div>
+
+            <div id="Lichsu" class="tabcontent">
+                <img style="margin-left: 11px;width: 57.5%;height: 180px;" src="/Đồ án 2/img/lichsu.jpg" alt="">
+            </div>
+
+            <div id="Thongso" class="tabcontent" style="display: block;">
+                <div class="info">
+                    <div class="info-list haii">
+                        <span>Khối lượng bản thân</span>
+                        <p>Phiên bản tiêu chuẩn: 98kg <br>
+                            Phiên bản thể thao: 99kg </p>
+
+                    </div>
+                    <div class="info-list mott  ">
+                        <span>Dài x Rộng x Cao</span>
+                        <span>1.920 x 702 x 1.075 mm</span>
+                    </div>
+                    <div class="info-list haii">
+                        <span>Khoảng cách trục bánh xe</span>
+                        <span>1.217 mm</span>
+                    </div>
+                    <div class="info-list mott">
+                        <span>Độ cao yên</span>
+                        <span>769 mm</span>
+                    </div>
+                    <div class="info-list haii">
+                        <span>Khoảng sáng gầm xe</span>
+                        <span>141 mm</span>
+                    </div>
+                    <div class="info-list mott">
+                        <span>Dung tích bình xăng</span>
+                        <span>3,7 lít</span>
+                    </div>
+                    <div class="info-list haii ">
+                        <span>Kích cỡ lớp trước/ sau</span>
+                        <p>Trước: 70/90 -17 M/C 38P <br>
+                            Sau: 80/90 – 17 M/C 50P</p>
+                    </div>
+                    <div class="info-list mott">
+                        <span>Phuộc trước</span>
+                        <span>Ống lồng, giảm chấn thủy lực</span>
+                    </div>
+                    <div class="info-list haii">
+                        <span>Phuộc sau</span>
+                        <span>Lò xo trụ, giảm chấn thủy lực</span>
+                    </div>
+                    <div class="info-list mott">
+                        <span>Loại động cơ</span>
+                        <span>Xăng, 4 kỳ, 1 xi-lanh, làm mát bằng không khí</span>
+                    </div>
+                    <div class="info-list haii">
+                        <span>Công suất tối đa</span>
+                        <span>6,18 kW/7.500 vòng/phút</span>
+                    </div>
+                    <div class="info-list mott">
+                        <span>Dung tích nhớt máy</span>
+                        <span>0,8 lít sau khi thay nhớt
+                        </span>
+                    </div>
+                    <div class="info-list haii">
+                        <span>Mức tiêu thụ nhiên liệu</span>
+                        <span>1,85l/100km</span>
+                    </div>
+                    <div class="info-list mott">
+                        <span>Loại truyền động</span>
+                        <span>Cơ khí, 4 số tròn</span>
+                    </div>
+                    <div class="info-list haii">
+                        <span>Hệ thống khởi động</span>
+                        <span>Đạp chân/Điện</span>
+                    </div>
+                    <div class="info-list mott">
+                        <span>Moment cực đại</span>
+                        <span>8,65 Nm/5.500 vòng/phút</span>
+                    </div>
+                    <div class="info-list haii">
+                        <span>Dung tích xy-lanh</span>
+                        <span>109,1 cm3</span>
+                    </div>
+                    <div class="info-list mott">
+                        <span>Đường kính x Hành trình pít tông</span>
+                        <span>50,0 mm x 55,6 mm</span>
+                    </div>
+                    <div class="info-list haii">
+                        <span>Tỷ số nén</span>
+                        <span>9,0:1</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="Anh" class="tabcontent">
+                <div class="list-anh">
+                    <img src="/Đồ án 2/img/xeden.png" alt="">
+                    <img src="/Đồ án 2/img/xedo.png" alt="">
+                </div>
+                <div class="list-anh1">
+                    <img src="/Đồ án 2/img/xexam.png" alt="">
+                    <img src="/Đồ án 2/img/xexanh.png" alt="">
+                    <img src="/Đồ án 2/img/xedo.png" alt="">
+                    <img src="/Đồ án 2/img/xeden.png" alt="">
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="clear"></div>
+    </article>
+    <footer>
+        <div class="foter">
+
+            <div class="panel">
+                <div class="footername">XE MÁY</div>
+                <ul class="list1">
+                    <li class="normal"><a href="#">Sản phẩm</a></li>
+                    <li class="normal"><a href="#">Phụ tùng</a></li>
+                    <li class="normal"><a href="#">Phụ kiện</a></li>
+                    <li class="normal"><a href="#">Dịch vụ sau bán hàng</a></li>
+                    <li class="normal"><a href="#">Cửa hàng Honda Uỷ nhiệm</a></li>
+                </ul>
+            </div>
+
+            <div class="panel">
+                <div class="footername">ĐÓNG GÓP XÃ HỘI</div>
+                <ul class="list1">
+                    <li class="normal"><a href="#">Hỗ trợ môi trường</a></li>
+                    <li class="normal"><a href="#">Hỗ trợ giáo dục</a></li>
+                    <li class="normal"><a href="#">Hỗ trợ cộng đồng</a></li>
+                    <li class="normal"><a href="#">Tin tức</a></li>
+
+                </ul>
+            </div>
+
+            <div class="panel">
+                <div class="footername">MY HONDA+</div>
+                <ul class="list1">
+                    <li class="normal"><a href="#">Giới thiệu chung</a></li>
+                    <li class="normal"><a href="#">Hướng dẫn sử dụng</a></li>
+                    <li class="normal"><a href="#">Điều khoản sử dụng</a></li>
+
+                </ul>
+            </div>
+
+            <div class="panel">
+                <div class="footername">LÁI XE AN TOÀN</div>
+                <ul class="list1">
+                    <li class="normal"><a href="#">Chương trình Tôi yêu Việt Nam</a></li>
+                    <li class="normal"><a href="#">Trung tâm đào tạo lái xe an toàn</a></li>
+                    <li class="normal"><a href="#">Hoạt động đào tạo</a></li>
+
+                </ul>
+            </div>
+
+            <div class="panel">
+                <div class="footername">TIN TỨC</div>
+                <ul class="list1">
+                    <li class="normal"><a href="#">Tin tức chung</a></li>
+                    <li class="normal"><a href="#">Tin tức xe máy</a></li>
+                    <li class="normal"><a href="#">Doanh số bán hàng</a></li>
+                    <li class="normal"><a href="#">Khuyến mại</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./trangchu.js"></script>
+
+</html>
